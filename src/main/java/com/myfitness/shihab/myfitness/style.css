@@ -1,8 +1,114 @@
-#date_range_selector {
-    color: #011635;
-    font-family: Inter;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.curved-background {
+    -fx-background-color: #3366ff;
+    -fx-shape: "M0 10.5C0 10.5 154.616 0 252.5 0C350.384 0 500 10.5 500 10.5V127.5H0V10.5Z";
+    -fx-pref-width: 400px;
+    -fx-pref-height: 127px;
+}
+
+.track-button {
+    -fx-pref-width: 420px;
+    -fx-pref-height: 54px;
+    -fx-background-color: #ffffff;
+    -fx-font-size: 20px;
+    -fx-text-fill: #011635;
+    -fx-font-weight: bold;
+    -fx-translate-y: 0px;
+    -fx-transition: all 0.3s ease-in-out;
+    -fx-background-radius: 50px;
+}
+
+.track-button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 4, 4);
+    -fx-background-color: #ffffff;
+    -fx-pref-width: 440px !important;
+    -fx-pref-height: 60px;
+    /*-fx-translate-y: -10px;*/
+}
+
+.dropdown-button {
+    -fx-font-family: 'Arial';
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #011635;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.dropdown-button .combo-box-base {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.dropdown-button .arrow-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.dropdown-button .arrow-button .arrow {
+    -fx-background-color: #011635;
+    -fx-shape: "M 0 0 L 4 4 L 8 0 Z";
+}
+
+.dropdown-button:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.page-title {
+    -fx-text-fill: #011635;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-alignment: center;
+}
+
+.activity-list {
+    -fx-padding: 24px;
+    -fx-spacing: 16px;
+    -fx-pref-width: 400px;
+    -fx-min-width: 400px;
+    -fx-min-height: 120px;
+    -fx-pref-height: 120px;
+    -fx-background-color: #FAFAFA;
+    -fx-background-radius: 27px;
+    -fx-border-width: 1px;
+    -fx-border-color: #DDDDF1;
+    -fx-border-radius: 27px;
+    -fx-alignment: center;
+}
+
+.activity-group{
+    -fx-spacing: 10px;
+}
+
+.activity-items{
+    -fx-text-fill: #011635;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-padding: 12px, 16px 12px 16px;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 27px;
+    -fx-pref-width: 130px;
+    -fx-text-alignment: center;
+}
+
+.number-input {
+    -fx-text-fill: #011635;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-radius: 27px;
+    -fx-border-width: 1px;
+    -fx-pref-height: 54px;
+}
+
+.save-btn {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-pref-width: 400px;
+    -fx-border-color: #DDDDF1;
+    -fx-border-radius: 47px;
+    -fx-pref-height: 60px;
+    -fx-background-color: #0365ED;
+    -fx-background-radius: 47px;
 }
